@@ -109,24 +109,30 @@ void Controller::startAnalysis() {
 
    // Get first run
    tracer.init(&firstInitMsg);
+   std::cerr << "Initial tracing starts" << std::endl;
    runs.push_back(tracer.trace());
+   std::cerr << "Initial tracing ended" << std::endl;
 
    if (runs[0]->getSize() != 0) {
       // Main program loop getting different flows until it is stopped by scheduler
       while (!completed) {
          // Reset aggregator
          aggregator->nextRun();
+         std::cerr << "Tracing starts" << std::endl;
          // Create new Tracer and get new flow
          Tracer tracer(socket, this, configuration->getProgram());
          tracer.init(initMsg);
          Run *run = tracer.trace();
          // If the run is different from existing runs, add it into vector of runs
-         if (aggregator->nodeInserted())
+         if (aggregator->nodeInserted()){
+            std::cerr << "Run saved" << std::endl;
             runs.push_back(run);
+         }
          // If the run is same as one of existing flows, delete it
          else
             delete run;
          scheduler->nextRun();
+         std::cerr << "Tracing ended" << std::endl;
       }
       // Reset aggregator once more in order to make last node final
       aggregator->nextRun();
@@ -224,9 +230,9 @@ void Controller::printTraces() {
  * @return String representation of the trace.
  */
 void Controller::printReport(){
-   std::cout << std::endl;
-   std::cout << "Analysis successfuly terminated." << std::endl;
-   std::cout << "Number of nodes in graph: " << aggregator->nodesCount() << std::endl;
-   std::cout << "Number of different runs: " << runs.size() << std::endl;
-   std::cout << std::endl;
+   std::cerr << std::endl;
+   std::cerr << "Analysis successfuly terminated." << std::endl;
+   std::cerr << "Number of nodes in graph: " << aggregator->nodesCount() << std::endl;
+   std::cerr << "Number of different runs: " << runs.size() << std::endl;
+   std::cerr << std::endl;
 }
