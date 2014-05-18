@@ -15,7 +15,7 @@ var searchData=
   ['setreturnval',['setReturnVal',['../classCall.html#aa07c0bd6f738a73ee5aa1daeb7f79a01',1,'Call']]],
   ['settype',['setType',['../classMessage.html#a505da28508c5e57a1bbaddbed148b944',1,'Message']]],
   ['setvariant',['setVariant',['../classCall.html#a882f93900311074e7076f1a8fb8018a2',1,'Call']]],
-  ['socket',['Socket',['../classSocket.html',1,'Socket'],['../classSocket.html#a3cf2097322c922ed30a1f4bb6bd7e1c0',1,'Socket::Socket()'],['../classController.html#a72078e74f088b5a92db96e9950fede9c',1,'Controller::socket()'],['../classTracer.html#ad1ca3fe20114fa609c9ecca445478e86',1,'Tracer::socket()']]],
+  ['socket',['Socket',['../classSocket.html',1,'Socket'],['../classController.html#a72078e74f088b5a92db96e9950fede9c',1,'Controller::socket()'],['../classTracer.html#ad1ca3fe20114fa609c9ecca445478e86',1,'Tracer::socket()'],['../classSocket.html#a3cf2097322c922ed30a1f4bb6bd7e1c0',1,'Socket::Socket()']]],
   ['socket_2ecpp',['Socket.cpp',['../Socket_8cpp.html',1,'']]],
   ['socket_2eh',['Socket.h',['../Socket_8h.html',1,'']]],
   ['socketclosedexception',['SocketClosedException',['../classSocketClosedException.html',1,'']]],

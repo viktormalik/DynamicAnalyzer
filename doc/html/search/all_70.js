@@ -12,6 +12,7 @@ var searchData=
   ['print',['print',['../classParam.html#aec9be165c8dfdfa971f831a84e10077d',1,'Param::print()'],['../classRun.html#a2b71c00599e7e6e1161554b33a97a8cc',1,'Run::print()']]],
   ['printjson',['printJson',['../classAggregator.html#a072faea696064073fdb01caecde7ba54',1,'Aggregator']]],
   ['printparams',['printParams',['../classCall.html#aa82a698fc5ec5cf7f839a445a2147eef',1,'Call']]],
+  ['printreport',['printReport',['../classController.html#a1f5d87e27cd06ba390eb2f4eb4c59481',1,'Controller']]],
   ['printtraces',['printTraces',['../classController.html#aa6ac6e383fe559d7c46bd2fc229975e0',1,'Controller']]],
   ['programargs',['programArgs',['../classTracer.html#ae7117c18d618e07ddb8b1e7f38f63f04',1,'Tracer']]],
   ['programargssize',['programArgsSize',['../classTracer.html#a7b2187abc9c427fadbd590ff7ec40bbb',1,'Tracer']]],

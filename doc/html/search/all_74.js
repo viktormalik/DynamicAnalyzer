@@ -4,7 +4,7 @@ var searchData=
   ['tfunmap',['TFunMap',['../Call_8h.html#aa1a147941556c6d4e83a29987cf8324c',1,'Call.h']]],
   ['todo_20list',['Todo List',['../todo.html',1,'']]],
   ['tostring',['toString',['../classAggregator.html#a8a200d5675ea07395c070bb50ce2d245',1,'Aggregator::toString(Call *call)'],['../classAggregator.html#a9a540fc3e13428a3243cc292a10150d1',1,'Aggregator::toString(Trace *trace)'],['../classBaseParamAggregator.html#aceec332a2bcf0b6428c5616c99e33243',1,'BaseParamAggregator::toString()']]],
-  ['trace',['Trace',['../classTrace.html',1,'Trace'],['../classTrace.html#aafef8ed744b967d133c34c8a813f7fc5',1,'Trace::Trace()'],['../classTracer.html#ab64aa8b8a616d6eb1bda805fb643bf72',1,'Tracer::trace()']]],
+  ['trace',['Trace',['../classTrace.html',1,'Trace'],['../classTracer.html#ab64aa8b8a616d6eb1bda805fb643bf72',1,'Tracer::trace()'],['../classTrace.html#aafef8ed744b967d133c34c8a813f7fc5',1,'Trace::Trace()']]],
   ['trace_2ecpp',['Trace.cpp',['../Trace_8cpp.html',1,'']]],
   ['trace_2eh',['Trace.h',['../Trace_8h.html',1,'']]],
   ['tracer',['Tracer',['../classTracer.html',1,'Tracer'],['../classTracer.html#a2343701da011651a43cd960e915f6dcd',1,'Tracer::Tracer()']]],
