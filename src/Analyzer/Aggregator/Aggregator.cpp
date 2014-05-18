@@ -139,11 +139,19 @@ void Aggregator::printJson() {
       output << "      \"id\" : " << i << "," << std::endl;
       output << "      \"label\" : \"" << i << "\"" << std::endl;
       output << "    }";
-      if (i != graph.size() - 1)
-         output << ",";
+      output << ",";
       output << std::endl;
    }
+   // Final node
+   int finalId = graph.size();
+   output << "    {" << std::endl;
+   output << "      \"id\" : " << finalId << "," << std::endl;
+   output << "      \"label\" : \"F\"" << std::endl;
+   output << "    }";
+   output << std::endl;
+
    output << "  ]," << std::endl;
+
    // Write edges
    output << "  \"links\" : [" << std::endl;
    bool isFirst = true;
@@ -160,11 +168,28 @@ void Aggregator::printJson() {
          output << "    }";
          isFirst = false;
       }
+      if (graph[i]->isFinal()){
+         output << ",";
+         output << std::endl;
+         output << "    {" << std::endl;
+         output << "      \"source\" : " << i << "," << std::endl;
+         output << "      \"target\" : " << finalId << "," << std::endl;
+         output << "      \"label\" : \"\"" << std::endl;
+         output << "    }";
+      }
    }
    output << std::endl;
    output << "  ]" << std::endl;
    // End of JSON object
    output << "}" << std::endl;
+}
+
+/**
+ * @brief Gets the number of nodes in graph.
+ * @return Number of nodes.
+ */
+unsigned Aggregator::nodesCount(){
+   return graph.size();
 }
 
 /**

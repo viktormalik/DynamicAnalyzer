@@ -23,6 +23,9 @@
 #include <sys/wait.h>
 #include <cstring>
 #include <iostream>
+#include <sys/types.h>
+#include <fcntl.h>
+#include <sys/stat.h>
 
 /**
  * @brief Constructor with members initialization.
@@ -70,6 +73,11 @@ void Tracer::init(InitialMsg *optionMsg) {
    if (newProcess >= 0) {
       if (newProcess == 0) {
          socket->closeWelcomeSocket();
+
+         // Redirect stdout and stderr to /dev/null
+         int fd = open("/dev/null", O_WRONLY);
+         dup2(fd, 1);
+         dup2(fd, 2);
          // Add shared library to LD_PRELOAD
          char ldPreloadTxt[] = "LD_PRELOAD=bin/lib_filesystem.so";
          putenv(ldPreloadTxt);

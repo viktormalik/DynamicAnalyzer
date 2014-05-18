@@ -217,3 +217,16 @@ void Controller::printTraces() {
    }
    std::cout << std::endl;
 }
+
+/**
+ * @brief Converts trace into its string representation.
+ * @param trace Trace to be converted.
+ * @return String representation of the trace.
+ */
+void Controller::printReport(){
+   std::cout << std::endl;
+   std::cout << "Analysis successfuly terminated." << std::endl;
+   std::cout << "Number of nodes in graph: " << aggregator->nodesCount() << std::endl;
+   std::cout << "Number of different runs: " << runs.size() << std::endl;
+   std::cout << std::endl;
+}

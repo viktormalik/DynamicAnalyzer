@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
       else {
          Controller controller(&config);
          controller.startAnalysis();
-         controller.printTraces();
+         controller.printReport();
       }
    } catch (SocketException &e) {
       std::cerr << "Socket error:" << std::endl << e.getDescription() << std::endl;

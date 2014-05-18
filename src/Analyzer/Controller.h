@@ -101,6 +101,11 @@ public:
     * @warning For testing purposes only.
     */
    void printTraces();
+   /**
+    * @brief Prints report about analysis.
+    * Called at the end of analysis.
+    */
+   void printReport();
 protected:
    /**
     * @brief List of runs obtained.

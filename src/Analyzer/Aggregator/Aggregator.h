@@ -80,6 +80,11 @@ public:
     * Creates list of nodes and list of links between these nodes.
     */
    void printJson();
+   /**
+    * @brief Gets the number of nodes in graph.
+    * @return Number of nodes.
+    */
+   unsigned nodesCount();
 protected:
    std::vector<GraphNode *> graph; /**< Vector of graph nodes representing graph. */
    int currentNode; /**< Index of current node - node with call that arrived as last. */
